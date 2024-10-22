@@ -70,7 +70,11 @@
     margin-right: 47px;
     padding: 8px 20px;
 }
-
+.Hamburger-button
+{
+    list-style: none;
+    cursor: pointer;
+}
 .link:hover {
     background-color: #E6533C;
     padding: 8px 20px;
@@ -156,4 +160,34 @@
 .media{
     color: rgba(239, 237, 232, 0.65);
     font-size: 0.8rem;
+}
+
+
+/* responsive related style */
+@media screen and (max-width:576px) {
+    
+    .hero-container{
+        flex-direction: column;
+    }
+    
+    
+    .menu{
+        display: none;
+    }
+
+    .link-btn{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+}
+@media screen and (min-width:576px) and (max-width:990px) {
+    .Hamburger-button{
+        display: none;
+    }
+}
+@media screen and (min-width:990px) and (max-width:1440px) {
+    .Hamburger-button{
+        display: none;
+    }
 }
