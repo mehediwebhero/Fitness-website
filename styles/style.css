@@ -10,7 +10,8 @@
 
 /* share related style */
 .navbar,
-.hero-area {
+.hero-area,
+.main {
     max-width: 1060px;
     margin: auto;
 }
@@ -40,6 +41,11 @@
     border-radius: 50px;
     cursor: pointer;
 
+}
+.section-description{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
 }
 /* .section-description{
     color: rgba(255, 255, 255, 0.5);
@@ -161,8 +167,33 @@
     color: rgba(239, 237, 232, 0.65);
     font-size: 0.8rem;
 }
+/* habits related style */
+.habits-area{
+    margin-top: 100px;
+}
+.habits-article{
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+}
+/* card related style */
+.fitness-teams-cards{
+    margin-top: 87px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.cards{
+   max-width: 231px;
+    text-align: center;
+}
 
-
+.teams-image{
+    border-radius: 50%;
+}
+.card-title{
+    font-size: 1.02rem;
+    font-weight: 600;
+}
 /* responsive related style */
 @media screen and (max-width:576px) {
     
