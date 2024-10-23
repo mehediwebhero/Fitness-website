@@ -103,6 +103,7 @@ body {
     font-size: 2.02rem;
     font-weight: 800;
     color: #E6533C;
+    font-style: italic;
 }
 
 .menu {
@@ -122,6 +123,10 @@ body {
 .Hamburger-button {
     list-style: none;
     cursor: pointer;
+}
+
+#icon {
+    color: #fff;
 }
 
 .link:hover {
@@ -424,8 +429,7 @@ td {
 .team-image {
     width: 326px;
     height: 272px;
-    position: relative;
-    border-radius: 8px;
+   
 
 }
 
@@ -433,27 +437,33 @@ td {
     color: #fff;
     position: absolute;
     margin-top: -68px;
-     margin-left: 15px;
+    margin-left: 15px;
     line-height: 5px;
 }
 
 .teams img {
+    position: relative;
     width: 100%;
-    
-   
+    border-radius: 8px;
+
+
 }
 
 .position {
     color: #9C9C9C;
 }
 
-.our-teams {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.teams-container {
     background: #1A1A1A;
     padding: 40px;
     border-radius: 8px;
-    gap: 20px; 
+}
+
+.our-teams {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 8px;
+    gap: 20px;
 }
 
 .our-teams-section {
@@ -522,13 +532,15 @@ td {
     .bmi-container,
     .footer-container,
     .service-content,
-    .bmi-calculator {
+    .bmi-calculator,
+    .our-teams-section {
         flex-direction: column;
 
     }
 
     .fitness-teams-cards,
-    .footer-container {
+    .footer-container,
+    .our-teams {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
 
@@ -567,7 +579,6 @@ td {
 
     }
 
-    .hero-image {}
 
     .table {
         width: 360px;
@@ -598,19 +609,53 @@ td {
         margin: 80px auto;
 
     }
-}
- /* .our-teams {
-   
-    grid-template-columns: repeat(1, 1fr);
-    
-}  */
 
+    .navbar {
+        align-items: center;
+    }
+}
+
+/* medium device  */
 @media screen and (min-width:576px) and (max-width:990px) {
+
+    .hero-container,
+    .fitness-teams-cards,
+    .bmi-container,
+    .footer-container,
+    .service-content,
+    .bmi-calculator,
+    .habits-container
+     {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fitness-teams-cards,
+    .footer-container,
+    .our-teams {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+
+    }
+
+    .our-teams {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    .bmi-container {
+        gap: 18px;
+
+    }
+
     .Hamburger-button {
         display: none;
     }
 }
 
+/* desktop device  */
 @media screen and (min-width:990px) and (max-width:1440px) {
     .Hamburger-button {
         display: none;
