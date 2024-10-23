@@ -12,7 +12,7 @@
 
 <body class="inter-font ">
     <!-- header-area-start -->
-    <header>
+    <header class="header">
         <div class="navbar display-flex">
             <h2 class="brand-name">Fitness</h2>
             <nav class="navigation-area">
@@ -29,7 +29,7 @@
         <div class="hero-area ">
             <div class="hero-container display-flex">
                 <div class="hero-article">
-                    <h1 class="hero-title">Get body in <span>shape</span> & stay healthy</h1>
+                    <h1 class="hero-title">Get body in <span class="text-style">shape</span> & stay healthy</h1>
                     <p class="section-description">Exercising regularly, every day if possible, is the single most
                         important thing you can do for your health.</p>
                     <div class="link-btn">
@@ -43,7 +43,7 @@
                         <br>
                         <span class="media">video tutorial</span>
                     </button>
-                    <img src="images/Images 2.png" alt="">
+                    <img class="hero-image" src="images/Images 2.png" alt="">
                     <button id="btn-bg" class=" hero-badge display-flex">
                         <div class="point"> </div>
                         <div>
@@ -57,7 +57,7 @@
         </div>
     </header>
     <main class="main">
-        <!-- habits section start -->
+        <!-- habits-section-start -->
         <section class="habits-area">
             <div class="habits-container">
                 <div class="habits-article">
@@ -69,30 +69,196 @@
                     <div class="cards">
                         <img class="teams-image" src="images/image 3.png" alt="">
                         <h3 class="card-title">Movement</h3>
-                            <p class="section-description">We believe fitness should be accessible to everyone</p>
+                        <p class="section-description">Fitness is the ability to carry out daily tasks without undue
+                            fatigue.</p>
                     </div>
                     <div class="cards">
-                        <img class="teams-image" src="images/image 3.png" alt="">
-                        <h3 class="card-title">Movement</h3>
-                            <p class="section-description">We believe fitness should be accessible to everyone</p>
+                        <img class="teams-image" src="images/image 2.png" alt="">
+                        <h3 class="card-title">Time</h3>
+                        <p class="section-description">Time is a full-service health and fitness provider</p>
                     </div>
                     <div class="cards">
-                        <img class="teams-image" src="images/image 3.png" alt="">
-                        <h3 class="card-title">Movement</h3>
-                            <p class="section-description">We believe fitness should be accessible to everyone</p>
+                        <img class="teams-image" src="images/image 4.png" alt="">
+                        <h3 class="card-title">Practice</h3>
+                        <p class="section-description">AFitness to practise is the ability to meet professional
+                            standards</p>
                     </div>
                     <div class="cards">
-                        <img class="teams-image" src="images/image 3.png" alt="">
-                        <h3 class="card-title">Movement</h3>
-                            <p class="section-description">We believe fitness should be accessible to everyone</p>
+                        <img class="teams-image" src="images/image 5.png" alt="">
+                        <h3 class="card-title">Weight Loss</h3>
+                        <p class="section-description">Some tips for weight loss include exercising regularly.</p>
                     </div>
                 </div>
 
             </div>
         </section>
-    </main>
-    <footer>
 
+        <!-- Extra-advice-section -->
+        <section class="extra-advice-section">
+            <div class="our-advice display-flex">
+                <div class="advice-article">
+                    <h2 class="advice-title">Run an Extra Mile Easily</h2>
+                    <p class="section-description">A moment that changed me: I thought fitness was my superpower. Then I
+                        realised it was a ball and chain</p>
+                    <div class="btn">
+                        <button id="btn-secondary" class="btn-primary">Join Now</button>
+                    </div>
+                </div>
+                <img class="advice-image" src="images/run.jpg" alt="">
+
+            </div>
+        </section>
+        <!-- Trainings and Exercises section -->
+        <section class="Trainings-and-Exercises">
+            <div class="exercises-container">
+                <h2 class="exercises-article">Trainings and Exercises</h2>
+                <p class="section-description">Engaging in exercise of any intensity every day is essential for
+                    preventing various diseases and other health issues. Learn more about different exercise types and
+                    their benefits here.</p>
+            </div>
+        </section>
+
+        <!-- bmi calculator section -->
+        <section class="bmi-article-section">
+            <h2 class="bmi-article">BMI Calculator</h2>
+            <p class="section-description">The Body Mass Index (BMI) Calculator can be used to calculate BMI value and
+                corresponding weight status while taking age into consideration.</p>
+        </section>
+
+        <!--BMI-calculator section -->
+        <section id="bg-table-section">
+            <div class="bmi-container display-flex">
+                <div class="bmi-calculator-chart">
+                    <h3 class="bmi-title">BMI Calculator Chart</h3>
+                    <table class="table">
+                        <tr>
+                            <th>BMI</th>
+                            <th>Weight Status</th>
+                        </tr>
+                        <tr>
+                            <td>Below 18.5</td>
+                            <td>Underweight</td>
+
+                        </tr>
+                        <tr>
+                            <td>18.5 - 24.9</td>
+                            <td>Healthy</td>
+                        </tr>
+                        <tr>
+                            <td>25.0 - 29.9</td>
+                            <td>Overweight</td>
+                        </tr>
+                        <tr>
+                            <td>30.0 - and Above</td>
+                            <td>Obese</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="bmi-calculator ">
+                    <h3 class="bmi-title-02">Calculate your BMI</h3>
+                    <p class="section-description bmi-description">BMI is a simple calculation that uses a person's
+                        height and weight to
+                        designate a classification.</p>
+                    <form action="" class="form">
+                        <input class="input" type="text" placeholder="Height/cm">
+                        <input class="input" type="text" placeholder="Weight/kg"> <br>
+                        <input class="input" type="text" placeholder="Age">
+                        <input class="input" type="text" placeholder="sex"><i id="icon" class="fa fa-angle-down"></i>
+                        <br>
+                        <input class="input-full-width" type="text" placeholder="Select an activity factor"><i id="icon"
+                            class="fa fa-angle-down"></i>
+                    </form>
+                    <button id="btn-cal" class="btn-primary">Calculate</button>
+
+                </div>
+            </div>
+        </section>
+        <!-- our-teams -->
+        <section class="our-teams-section">
+            <div class="teams-article">
+                <h2 class="section-title">Meet Our Team</h2>
+                <p class="section-description">Corporate fitness sessions can be used for Team Building and increasing
+                    staff productivity at work by improving employee relations and communication.</p>
+            </div>
+            <div class="our-teams">
+                <div class="team">
+                    <img class="team-image" src="images/trainer1.png" alt="">
+                    <div class="names">
+                        <h4 class="name">Jerome Bell</h4>
+                        <p class="position">Trainer</p>
+                    </div>
+                </div>
+                <div class="teams">
+                    <img class="team-image" src="images/trainer2.png" alt="">
+                    <div class="names">
+                        <h4 class="name">Cameron Williamson</h4>
+                        <p class="position">Trainer</p>
+                    </div>
+                </div>
+                <div class="teams">
+                    <img class="team-image" src="images/trainer3.png" alt="">
+                    <div class="names">
+                        <h4 class="name">Darrell Steward</h4>
+                        <p class="position">Trainer</p>
+                    </div>
+                </div>
+                <div class="teams">
+                    <img class="team-image" src="images/trainer4.png" alt="">
+                    <div class="names">
+                        <h4 class="name">Dianne Russell</h4>
+                        <p class="position">Trainer</p>
+                    </div>
+                </div>
+                <div class="teams">
+                    <img class="team-image" src="images/trainer5.png" alt="">
+                    <div class="names">
+                        <h4 class="name">Cody Fisher</h4>
+                        <p class="position">Trainer</p>
+                    </div>
+                </div>
+                <div class="teams">
+                    <img class="team-image" src="images/trainer6.png" alt="">
+                    <div class="names">
+                        <h4 class="name">Theresa Webb</h4>
+                        <p class="position">Trainer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- df -->
+    </main>
+    <footer class="footer-bg">
+        <div class="footer-container display-flex">
+            <div class="footer-article">
+                <h2 class="footer-name">Fitness</h2>
+                <p class="section-description">Stronger muscles can mean two different things. Being able to lift
+                    heavier amounts or having higher endurance for lifting. </p>
+            </div>
+
+            <div class="footer-service-01">
+                <ul class="footer-link">
+                    <h2 class="service-title">Get Started</h2>
+                    <li><a href="">service</a></li>
+                    <li><a href="">Contact us</a></li>
+                    <li><a href="">Affiliate program</a></li>
+                    <li><a href="">About us</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-service-02">
+                <ul class="footer-link">
+                    <h2 class="service-title">Get Started</h2>
+                    <li><a href="">Fitness</a></li>
+                    <li><a href="">platform</a></li>
+                    <li><a href="">workout Layout</a></li>
+                    <li><a href="">App Design</a></li>
+                </ul>
+            </div>
+           
+
+        </div>
+        <hr class="horizontal">
+        <h5 class="copyright">All right reserved @Fitness 2024</h5>
     </footer>
 </body>
 

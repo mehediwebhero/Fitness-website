@@ -1,6 +1,10 @@
 /* inter-google-font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+
+/* @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
 .inter-font {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -8,16 +12,47 @@
     font-style: normal;
 }
 
+body {
+    background-color: #000;
+}
+
 /* share related style */
 .navbar,
 .hero-area,
-.main {
+.habits-area,
+.extra-advice-section,
+.Trainings-and-Exercises,
+.bmi-article-section,
+.bmi-container,
+.our-teams-section,
+.footer-container,
+.horizontal,
+.copyright {
     max-width: 1060px;
     margin: auto;
 }
 
+.header {
+    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
+
+}
+
 .display-flex {
     display: flex;
+}
+
+.text-style {
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 10px;
+
 }
 
 .btn-primary {
@@ -37,21 +72,28 @@
     font-size: 1.02rem;
     font-weight: 600;
     padding: 10px 20px;
-    border: 1px solid #fff;
+    border: 1px solid #898989;
     border-radius: 50px;
     cursor: pointer;
 
 }
-.section-description{
+
+.section-description {
     font-size: 0.8rem;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.5);
 }
+
 /* .section-description{
     color: rgba(255, 255, 255, 0.5);
 } */
 
 /* navbar related style */
+
+.hero-title {
+    color: #fff;
+}
+
 .navbar {
     align-items: center;
     justify-content: space-between;
@@ -72,15 +114,16 @@
     text-decoration: none;
     font-size: 1.02rem;
     font-weight: 600;
-    color: #000;
+    color: #fff;
     margin-right: 47px;
     padding: 8px 20px;
 }
-.Hamburger-button
-{
+
+.Hamburger-button {
     list-style: none;
     cursor: pointer;
 }
+
 .link:hover {
     background-color: #E6533C;
     padding: 8px 20px;
@@ -94,9 +137,11 @@
     align-items: center;
     gap: 80px;
 }
-.hero-container{
+
+.hero-container {
     gap: 90px;
 }
+
 .hero-article {
     max-width: 525px;
 }
@@ -105,23 +150,25 @@
     font-size: 4.4rem;
     font-weight: 800;
 }
-.point{
+
+.point {
     width: 30px;
     height: 30px;
     background-color: #E6533C;
     border-radius: 50%;
 }
-#btn-bg{
+
+#btn-bg {
     align-items: center;
     max-width: 170px;
-    background-color: rgba(48, 48, 48, 0.54); 
+    background-color: rgba(48, 48, 48, 0.54);
     margin-top: -150px;
     border-radius: 12px;
     border: none;
     filter: blur(0.5px);
 }
 
-.hero-badge{
+.hero-badge {
     align-items: center;
     gap: 10px;
     padding: 20px;
@@ -130,95 +177,442 @@
     position: absolute;
     z-index: 1;
 }
- .hero-badge-02{
+
+.hero-badge-02 {
     max-width: 110px;
-    background-color: rgba(48, 48, 48, 0.54); 
+    background-color: rgba(48, 48, 48, 0.54);
     margin-top: 150px;
     margin-left: 240px;
-     padding: 10px 20px; 
+    padding: 10px 20px;
     border-radius: 12px;
     border: none;
     filter: blur(0.5px);
     position: absolute;
     z-index: 1;
-} 
-#btn-bg-02{
+}
+
+#btn-bg-02 {
     align-items: center;
     max-width: 170px;
-    background-color: rgba(48, 48, 48, 0.54); 
+    background-color: rgba(48, 48, 48, 0.54);
     border-radius: 12px;
     border: none;
     filter: blur(0.5px);
 }
-.image{
+
+.image {
     position: relative;
 }
-#recoded-number{
+
+#recoded-number {
     color: #fff;
     font-size: 1.02rem;
     font-weight: 900;
 }
-.upload-number{
+
+.upload-number {
     font-size: 2.06rem;
     font-weight: 900;
     color: #fff;
 }
-.media{
+
+.media {
     color: rgba(239, 237, 232, 0.65);
     font-size: 0.8rem;
 }
+
 /* habits related style */
-.habits-area{
+.habits-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+.habits-area {
     margin-top: 100px;
 }
-.habits-article{
+
+.habits-article {
     max-width: 700px;
     margin: auto;
     text-align: center;
 }
+
 /* card related style */
-.fitness-teams-cards{
+.fitness-teams-cards {
     margin-top: 87px;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
-.cards{
-   max-width: 231px;
+
+.cards {
+    max-width: 231px;
     text-align: center;
 }
 
-.teams-image{
+.teams-image {
     border-radius: 50%;
 }
-.card-title{
+
+.card-title {
     font-size: 1.02rem;
     font-weight: 600;
+    color: #fff;
 }
+
+/* extra advice related style */
+.our-advice {
+    gap: 165px;
+    align-items: center;
+}
+
+.advice-article {
+    max-width: 443px;
+}
+
+.advice-title {
+
+    font-size: 3rem;
+    font-weight: 900;
+    color: #fff;
+}
+
+.advice-image {
+    width: 40%;
+    border-radius: 8px;
+}
+
+.extra-advice-section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background: #222222;
+    padding: 30px 24px 30px 46px;
+    border-radius: 8px;
+}
+
+/* Trainings and Exercises related style */
+.exercises-article {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #fff;
+}
+
+.exercises-container {
+    max-width: 601px;
+}
+
+/* BMI related section */
+.bmi-article-section {
+    max-width: 608px;
+    margin: 80px auto;
+
+}
+
+.bmi-title {
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 54px;
+}
+
+.bmi-title-02 {
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 14px;
+}
+
+.bmi-description {
+    margin-bottom: 34px;
+}
+
+.bmi-article {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+#bg-table-section {
+    background: #222222;
+    padding: 20px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.table tr,
+td,
+th {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px;
+}
+
+.table tr,
+th {
+
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.table tr,
+td {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+}
+
+/* input form related style */
+.bmi-container {
+    gap: 187px;
+
+}
+
+.bmi-calculator {
+    max-width: 557px;
+}
+
+.input {
+    outline: none;
+    width: 49.5%;
+    padding: 10px;
+    background: #383838;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    gap: 12px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.input-full-width {
+    width: 100%;
+    outline: none;
+    padding: 10px;
+    background: #383838;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    gap: 12px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+
+.form {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+#icon {
+    position: absolute;
+    margin-left: -40px;
+    margin-top: 10px;
+    color: #9C9C9C;
+    font-size: 18px;
+    /* padding-left: -54px; */
+}
+
+
+/* our-teams related style */
+.teams-article {
+    max-width: 651px;
+    text-align: center;
+    margin: 80px auto;
+
+}
+
+.team-image {
+    width: 326px;
+    height: 272px;
+    position: relative;
+    border-radius: 8px;
+
+}
+
+.names {
+    color: #fff;
+    position: absolute;
+    margin-top: -68px;
+     margin-left: 15px;
+    line-height: 5px;
+}
+
+.teams img {
+    width: 100%;
+    
+   
+}
+
+.position {
+    color: #9C9C9C;
+}
+
+.our-teams {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: #1A1A1A;
+    padding: 40px;
+    border-radius: 8px;
+    gap: 20px; 
+}
+
+.our-teams-section {
+    margin-bottom: 80px;
+}
+
+/* footer related area */
+.footer-bg {
+    background: #1A1A1A;
+    padding: 20px;
+}
+
+.footer-name {
+    color: #E6533C;
+    font-size: 4.03rem;
+    font-weight: 800;
+    font-style: italic;
+
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+
+}
+
+
+
+.footer-link li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-style: 1.25rem;
+    cursor: pointer;
+}
+
+.footer-link li {
+    list-style: none;
+    margin-bottom: 15px;
+
+}
+
+.service-title {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.horizontal {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.copyright {
+    font-size: 1rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 20px;
+}
+
 /* responsive related style */
 @media screen and (max-width:576px) {
-    
-    .hero-container{
+
+    .hero-container,
+    .fitness-teams-cards,
+    .our-advice,
+    .bmi-container,
+    .footer-container,
+    .service-content,
+    .bmi-calculator {
         flex-direction: column;
+
     }
-    
-    
-    .menu{
+
+    .fitness-teams-cards,
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .footer-container {
+
+        gap: 10px;
+
+    }
+
+    #btn-secondary {
+        width: 300px;
+    }
+
+    .advice-article {
+        display: grid;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .hero-area,
+    .fitness-teams-cards {
+        display: grid;
+        justify-items: center;
+        gap: 10px;
+    }
+
+    .input {
+        width: 40%;
+
+    }
+
+    .input-full-width {
+        width: 82%;
+
+    }
+
+    .hero-image {}
+
+    .table {
+        width: 360px;
+    }
+
+    .bmi-container {
+        gap: 18px;
+
+    }
+
+    .advice-image {
+        width: 100%;
+        margin-top: -150px;
+    }
+
+    .menu {
         display: none;
     }
 
-    .link-btn{
-        display:grid;
-        grid-template-columns: repeat(2,1fr);
+    .link-btn {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
+
+    .bmi-article-section {
+        max-width: 608px;
+        margin: 80px auto;
+
+    }
 }
+ /* .our-teams {
+   
+    grid-template-columns: repeat(1, 1fr);
+    
+}  */
+
 @media screen and (min-width:576px) and (max-width:990px) {
-    .Hamburger-button{
+    .Hamburger-button {
         display: none;
     }
 }
+
 @media screen and (min-width:990px) and (max-width:1440px) {
-    .Hamburger-button{
+    .Hamburger-button {
         display: none;
     }
 }
