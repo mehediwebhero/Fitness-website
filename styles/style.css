@@ -1,8 +1,6 @@
 /* inter-google-font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-
-/* @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
 
 .inter-font {
@@ -14,6 +12,11 @@
 
 body {
     background-color: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 /* share related style */
@@ -34,6 +37,7 @@ body {
 
 .header {
     background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
+    padding: 30px;
 
 }
 
@@ -45,14 +49,6 @@ body {
     font-family: "Cedarville Cursive", cursive;
     font-weight: 400;
     font-style: italic;
-}
-
-.section-title {
-    font-size: 3rem;
-    font-weight: 900;
-    color: #fff;
-    margin-bottom: 10px;
-
 }
 
 .btn-primary {
@@ -78,22 +74,22 @@ body {
 
 }
 
+.section-title {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 10px;
+
+}
+
 .section-description {
     font-size: 0.8rem;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.5);
 }
 
-/* .section-description{
-    color: rgba(255, 255, 255, 0.5);
-} */
 
 /* navbar related style */
-
-.hero-title {
-    color: #fff;
-}
-
 .navbar {
     align-items: center;
     justify-content: space-between;
@@ -120,15 +116,6 @@ body {
     padding: 8px 20px;
 }
 
-.Hamburger-button {
-    list-style: none;
-    cursor: pointer;
-}
-
-#icon {
-    color: #fff;
-}
-
 .link:hover {
     background-color: #E6533C;
     padding: 8px 20px;
@@ -137,14 +124,33 @@ body {
     font-weight: 600;
 }
 
+.Hamburger-button {
+    list-style: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+#icon {
+    color: #fff;
+   
+}
+
 /* hero-section-style */
 .hero-area {
+    margin-top: 35px;
     align-items: center;
     gap: 80px;
 }
 
 .hero-container {
+    align-items: center;
     gap: 90px;
+}
+
+.hero-title {
+    color: #fff;
+    line-height: 80px;
+    margin-bottom: 24px;
 }
 
 .hero-article {
@@ -205,6 +211,10 @@ body {
     filter: blur(0.5px);
 }
 
+.link-btn {
+ margin-top: 20px; 
+}
+
 .image {
     position: relative;
 }
@@ -227,21 +237,23 @@ body {
 }
 
 /* habits related style */
+.habits-article {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+}
 .habits-title {
     font-size: 3rem;
     font-weight: 800;
     color: #fff;
+    margin-bottom: 24px;
 }
 
 .habits-area {
     margin-top: 100px;
 }
 
-.habits-article {
-    max-width: 700px;
-    margin: auto;
-    text-align: center;
-}
+
 
 /* card related style */
 .fitness-teams-cards {
@@ -251,18 +263,19 @@ body {
 }
 
 .cards {
-    max-width: 231px;
     text-align: center;
 }
 
 .teams-image {
     border-radius: 50%;
+    margin-bottom: 24px;
 }
 
 .card-title {
     font-size: 1.02rem;
     font-weight: 600;
     color: #fff;
+    margin-bottom: 12px;
 }
 
 /* extra advice related style */
@@ -276,12 +289,15 @@ body {
 }
 
 .advice-title {
-
     font-size: 3rem;
     font-weight: 900;
     color: #fff;
+    margin-bottom: 24px;
 }
 
+.btn{
+    margin-top: 24px;
+}
 .advice-image {
     width: 40%;
     border-radius: 8px;
@@ -293,17 +309,6 @@ body {
     background: #222222;
     padding: 30px 24px 30px 46px;
     border-radius: 8px;
-}
-
-/* Trainings and Exercises related style */
-.exercises-article {
-    font-size: 3rem;
-    font-weight: 900;
-    color: #fff;
-}
-
-.exercises-container {
-    max-width: 601px;
 }
 
 /* BMI related section */
@@ -429,18 +434,21 @@ td {
 .team-image {
     width: 326px;
     height: 272px;
-   
+
 
 }
 
 .names {
     color: #fff;
     position: absolute;
-    margin-top: -68px;
+    margin-top: -58px;
     margin-left: 15px;
     line-height: 5px;
+    
 }
-
+.name{
+    margin-bottom: 20px;
+}
 .teams img {
     position: relative;
     width: 100%;
@@ -481,6 +489,7 @@ td {
     font-size: 4.03rem;
     font-weight: 800;
     font-style: italic;
+    margin-bottom: 20px;
 
 }
 
@@ -510,6 +519,7 @@ td {
     color: #fff;
     font-size: 2rem;
     font-weight: 700;
+    margin-bottom: 30px;
 }
 
 .horizontal {
@@ -546,10 +556,8 @@ td {
 
     }
 
-    .footer-container {
-
-        gap: 10px;
-
+    .navbar {
+        align-items: center;
     }
 
     #btn-secondary {
@@ -594,7 +602,7 @@ td {
         margin-top: -150px;
     }
 
-    .menu {
+    .menu{
         display: none;
     }
 
@@ -610,8 +618,10 @@ td {
 
     }
 
-    .navbar {
-        align-items: center;
+    .footer-container {
+
+        gap: 10px;
+
     }
 }
 
@@ -624,18 +634,26 @@ td {
     .footer-container,
     .service-content,
     .bmi-calculator,
-    .habits-container
-     {
+    .habits-container {
         flex-direction: column;
         align-items: center;
     }
 
     .fitness-teams-cards,
-    .footer-container,
-    .our-teams {
+    .footer-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
+
+    }
+
+    .link {
+        margin-right: 15px;
+        /* padding: 8px 20px; */
+    }
+
+    .bmi-container {
+        gap: 18px;
 
     }
 
@@ -645,8 +663,9 @@ td {
 
     }
 
-    .bmi-container {
-        gap: 18px;
+    .team-image {
+        width: 326px;
+        height: 200px;
 
     }
 
