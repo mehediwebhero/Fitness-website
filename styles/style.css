@@ -1,6 +1,7 @@
 /* inter-google-font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+/* cu */
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
 
 .inter-font {
@@ -132,7 +133,7 @@ body {
 
 #icon {
     color: #fff;
-   
+
 }
 
 /* hero-section-style */
@@ -212,7 +213,7 @@ body {
 }
 
 .link-btn {
- margin-top: 20px; 
+    margin-top: 20px;
 }
 
 .image {
@@ -242,6 +243,7 @@ body {
     margin: auto;
     text-align: center;
 }
+
 .habits-title {
     font-size: 3rem;
     font-weight: 800;
@@ -295,9 +297,10 @@ body {
     margin-bottom: 24px;
 }
 
-.btn{
+.btn {
     margin-top: 24px;
 }
+
 .advice-image {
     width: 40%;
     border-radius: 8px;
@@ -419,9 +422,7 @@ td {
     margin-top: 10px;
     color: #9C9C9C;
     font-size: 18px;
-    /* padding-left: -54px; */
 }
-
 
 /* our-teams related style */
 .teams-article {
@@ -444,11 +445,13 @@ td {
     margin-top: -58px;
     margin-left: 15px;
     line-height: 5px;
-    
+
 }
-.name{
+
+.name {
     margin-bottom: 20px;
 }
+
 .teams img {
     position: relative;
     width: 100%;
@@ -602,7 +605,7 @@ td {
         margin-top: -150px;
     }
 
-    .menu{
+    .menu {
         display: none;
     }
 
@@ -644,12 +647,10 @@ td {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
-
     }
 
     .link {
         margin-right: 15px;
-        /* padding: 8px 20px; */
     }
 
     .bmi-container {
